@@ -34,7 +34,7 @@ impl SigningKey {
 
     /// Initialize from a raw scalar value (big endian).
     pub fn from_bytes(bytes: &[u8]) -> Result<Self> {
-        let signing_key = k256::ecdsa::SigningKey::from_bytes(bytes)?;
+        let signing_key = k256::ecdsa::SigningKey::from_bytes(bytes.into())?;
         Ok(Self::new(Box::new(signing_key)))
     }
 

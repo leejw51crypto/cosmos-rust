@@ -1,15 +1,7 @@
 [package]
-name = "cosmrs"
-version = "0.11.0"
-authors = ["Tony Arcieri <tony@iqlusion.io>"]
-license = "Apache-2.0"
-repository = "https://github.com/cosmos/cosmos-rust/tree/main/cosmrs"
-description = "Transaction builder and signer for Cosmos-based blockchains"
-readme = "README.md"
-categories = ["cryptography", "cryptography::cryptocurrencies", "encoding"]
-keywords = ["blockchain", "cosmos", "tendermint", "transaction"]
+name = "mytest2"
+version = "0.1.0"
 edition = "2021"
-rust-version = "1.59"
 
 [dependencies]
 cosmos-sdk-proto = { version = "0.16", default-features = false, path = "../cosmos-sdk-proto" }
@@ -25,7 +17,7 @@ thiserror = "1"
 
 # optional dependencies
 bip32 = { version = "0.5", optional = true }
-tendermint-rpc = { version = "0.32", optional = true, features = ["http-client"] }
+tendermint-rpc = { version = "0.29", optional = true, features = ["http-client"] }
 tokio = { version = "1", optional = true }
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
