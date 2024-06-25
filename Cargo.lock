@@ -1813,8 +1813,7 @@ dependencies = [
 [[package]]
 name = "tonic"
 version = "0.8.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "55b9af819e54b8f33d453655bef9b9acc171568fb49523078d0cc4e7484200ec"
+source = "git+https://github.com/leejw51crypto/tonic.git?branch=cronos#8c521a6e85b7a1835463069035fbe2c504fd3913"
 dependencies = [
  "async-stream",
  "async-trait",
